@@ -47,3 +47,6 @@ planus = "0.4.0"
 [dependencies.serde]
 features = ["derive"]
 version = "1.0.190"
+
+[lib]
+crate-type = ["dylib"]

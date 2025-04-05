@@ -184,6 +184,11 @@ fn main() {
         println!("cargo:rustc-link-lib=advapi32");
         println!("cargo:rustc-link-lib=crypt32");
         println!("cargo:rustc-link-lib=user32");
+
+        println!("cargo:rustc-link-lib=dylib=mfplat");
+        println!("cargo:rustc-link-lib=dylib=mfuuid");
+        println!("cargo:rustc-link-lib=dylib=strmiids");
+        println!("cargo:rustc-link-lib=dylib=msvcrt");
     }
 
     // Remove subprojects/.wraplock created by Meson's directory locking
